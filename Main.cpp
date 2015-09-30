@@ -11,5 +11,5 @@ int main()
 
     int occurances = count_lines(test_file_name, test_delimiter);
 
-    std::cout << occurances << endl;
+    std::cout << occurances << std::endl;
 }
