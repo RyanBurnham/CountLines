@@ -12,9 +12,11 @@ int count_lines(std::string file_name, std::string s)
 
     while(file)
     {
-         occurences++;
          std::string current{};
          std::getline(file, current);
+
+         if(current.find(s) != std::string::npos)
+            occurences++;
     }
 
     return occurences;
